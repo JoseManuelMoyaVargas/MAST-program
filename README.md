@@ -11,4 +11,11 @@ Here are two examples of trees, each containing 10 identical leaves labeled from
 
 The trees have been saved in the computer's memory in the form of general trees, using one pointer per son, one per brother and one per parent. The figure below shows such a general representation of both trees.
 ![image1]( https://github.com/JoseManuelMoyaVargas/MAST-program/blob/master/sources/image1.png)
+
 The pointers (arrows) down are the relation son and to the right is the relation brother. Pointers directed up (the relation parent) are not drawn in the first figure for the sake of clarity. 
+
+## How have we implemented the solution?
+
+We have created internal vertices identifiers for the trees visible above.
+![image3]( https://github.com/JoseManuelMoyaVargas/MAST-program/blob/master/sources/image1.png)
+
