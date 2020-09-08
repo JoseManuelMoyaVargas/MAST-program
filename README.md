@@ -10,4 +10,4 @@ Here are two examples of trees, each containing 10 identical leaves labeled from
 (10,(8,(9,(5,4)),(6,2,3)),(7,1));
 
 The trees have been saved in the computer's memory in the form of general trees, using one pointer per son, one per brother and one per parent. The figure below shows such a general representation of both trees.
- 
+![image1]( https://github.com/JoseManuelMoyaVargas/MAST-program/blob/master/sources/image1.png)
