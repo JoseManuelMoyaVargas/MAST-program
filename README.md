@@ -1,2 +1,2 @@
 # MAST-program
-C++ program that solves the problem know in IT as as Maximum agreement subtree problem (MAST)
+C++ program that solves the problem know in IT as Maximum agreement subtree problem (MAST)
