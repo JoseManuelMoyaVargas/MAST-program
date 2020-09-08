@@ -1,5 +1,5 @@
 # MAST-program
-C++ program that solves the problem know in IT as Maximum agreement subtree problem ([MAST](https://en.wikipedia.org/wiki/Maximum_agreement_subtree_problem)).
+C++ program that solves the problem known in IT as Maximum agreement subtree problem ([MAST](https://en.wikipedia.org/wiki/Maximum_agreement_subtree_problem)).
 
 ## Explanation of the problem
 
