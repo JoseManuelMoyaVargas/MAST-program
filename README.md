@@ -59,7 +59,7 @@ n(n-1)/2 comparisons of input trees (each with each). The order of comparison: 1
 
 ## Input example
 
-4
+4. 
 (1,5,(10,6,3),(2,(8,7)),(9,4));  
 ((7,(3,(4,9,(1,2)))),8,(5,(10,6)));  
 (7,((6,(9,5),(8,3)),(1,(2,10,4))));  
