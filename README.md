@@ -48,6 +48,32 @@ A1|0|0|0|0|0|1|0|0|1|0|2|1|0|0|1|1|
 In the table above, we see the filled array after the algorithm has run. As we can see F1 after mapping with E2 gave an optimal result |l| = 4. In the next step, by mapping F1 with F2, the vertex E2 was selected as the best selection from the above 3 conditions. The result is 6. We interpret it in such a way that it is the minimum number of leaves required for removal in each of the compared trees to be isomorphic. We need to remove the leaves: 1,3,5,7,9,10. After deleting them, we receive the following agreement subtree:
 ![image4]( https://github.com/JoseManuelMoyaVargas/MAST-program/blob/master/sources/image4.png)
 
+## Input format
+
+The value of n denotes the size of the set of n rooted trees.
+n rooted trees in NEWICK format.
+
+## Output format
+
+n(n-1)/2 comparisons of input trees (each with each). The order of comparison: 1-2, 1-3, ..., 1-n, 2-3, 2-4, ..., 2-n, ..., (n-1) -n.
+
+## Input example
+
+4
+(1,5,(10,6,3),(2,(8,7)),(9,4));
+((7,(3,(4,9,(1,2)))),8,(5,(10,6)));
+(7,((6,(9,5),(8,3)),(1,(2,10,4))));
+(7,(8,3,4,6,1),(9,5,10),2);
+
+## Output example
+
+5
+7
+6
+6
+6
+6
+
 
 
 
