@@ -26,24 +26,24 @@ We first fill in this array by inserting ones for all the leaves of one and then
 3.	identify the sons of the AX node with the sons of the BX node (not necessarily all) so that the sum of identical nodes is as large as possible
 We implemented the subpoint 3 with a brute force algorithm, browsing the full space of possible solutions and selecting the best result. When completing the comparison of the two roots we gets the final result, which is our |l|.
 
-  10 8 9 5 4 6 2 3 7 1F2E2D2A2B2C2
---+--------------------------------
- 4|0|0|0|0|1|0|0|0|0|0|1|1|1|1|0|0|
- 8|0|1|0|0|0|0|0|0|0|0|1|1|0|0|0|0|
- 1|0|0|0|0|0|0|0|0|0|1|1|0|0|0|0|1|
- 5|0|0|0|1|0|0|0|0|0|0|1|1|1|1|0|0|
- 3|0|0|0|0|0|0|0|1|0|0|1|1|0|0|1|0|
- 9|0|0|1|0|0|0|0|0|0|0|1|1|1|0|0|0|
- 2|0|0|0|0|0|0|1|0|0|0|1|1|0|0|1|0|
-10|1|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|
- 7|0|0|0|0|0|0|0|0|1|0|1|0|0|0|0|1|
- 6|0|0|0|0|0|1|0|0|0|0|1|1|0|0|1|0|
-F1|1|1|1|1|1|1|1|1|1|1|4|4|2|2|2|2|
-E1|0|1|0|1|0|0|0|1|0|1|3|2|1|1|1|1|
-B1|0|0|0|1|0|0|0|1|0|0|2|2|1|1|1|0|
-D1|1|0|1|0|0|1|1|0|1|0|2|2|1|0|2|1|
-C1|1|0|0|0|0|1|0|0|1|0|2|1|0|0|1|1|
-A1|0|0|0|0|0|1|0|0|1|0|2|1|0|0|1|1|
+  10 8 9 5 4 6 2 3 7 1F2E2D2A2B2C2 
+--+--------------------------------  
+ 4|0|0|0|0|1|0|0|0|0|0|1|1|1|1|0|0| 
+ 8|0|1|0|0|0|0|0|0|0|0|1|1|0|0|0|0| 
+ 1|0|0|0|0|0|0|0|0|0|1|1|0|0|0|0|1| 
+ 5|0|0|0|1|0|0|0|0|0|0|1|1|1|1|0|0| 
+ 3|0|0|0|0|0|0|0|1|0|0|1|1|0|0|1|0| 
+ 9|0|0|1|0|0|0|0|0|0|0|1|1|1|0|0|0| 
+ 2|0|0|0|0|0|0|1|0|0|0|1|1|0|0|1|0| 
+10|1|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0| 
+ 7|0|0|0|0|0|0|0|0|1|0|1|0|0|0|0|1| 
+ 6|0|0|0|0|0|1|0|0|0|0|1|1|0|0|1|0| 
+F1|1|1|1|1|1|1|1|1|1|1|4|4|2|2|2|2| 
+E1|0|1|0|1|0|0|0|1|0|1|3|2|1|1|1|1| 
+B1|0|0|0|1|0|0|0|1|0|0|2|2|1|1|1|0| 
+D1|1|0|1|0|0|1|1|0|1|0|2|2|1|0|2|1| 
+C1|1|0|0|0|0|1|0|0|1|0|2|1|0|0|1|1| 
+A1|0|0|0|0|0|1|0|0|1|0|2|1|0|0|1|1|  
 
 In the table above, we see the filled array after the algorithm has run. As we can see F1 after mapping with E2 gave an optimal result |l| = 4. In the next step, by mapping F1 with F2, the vertex E2 was selected as the best selection from the above 3 conditions. The result is 6. We interpret it in such a way that it is the minimum number of leaves required for removal in each of the compared trees to be isomorphic. We need to remove the leaves: 1,3,5,7,9,10. After deleting them, we receive the following agreement subtree:
 ![image4]( https://github.com/JoseManuelMoyaVargas/MAST-program/blob/master/sources/image4.png)
